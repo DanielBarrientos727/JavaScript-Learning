@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas con Progreso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <header class="encabezado">
+            <h1>Mis tareas</h1>
+            <p>Organiza tus actividades y alcanza tus objetivos.</p>
+        </header>
+
+        <section class="estadisticas">
+
+            <div class="tarjeta">
+                <h3>Total de tareas</h3>
+                <p id="total-tareas">0</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Completadas</h3>
+                <p id="tareas-completadas">0</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Pendientes</h3>
+                <p id="tareas-pendientes">0</p>
+            </div>
+
+        </section>
+
+        <section class="seccion-tareas">
+
+            <h2>Mi lista</h2>
+
+            <form id="formulario-tarea">
+                <input
+                    type="text"
+                    id="entrada-tarea"
+                    placeholder="Escribe una tarea..."
+                >
+
+                <button type="submit">Agregar tarea</button>
+            </form>
+
+            <ul id="lista-tareas">
+                <!-- Las tareas aparecerán aquí -->
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
